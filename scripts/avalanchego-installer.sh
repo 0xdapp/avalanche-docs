@@ -56,17 +56,17 @@ check_reqs () {
   if ! command -v curl &> /dev/null
   then
       echo "curl could not be found, will install..."
-      sudo apt-get install curl -y
+      sudo pacman -S curl
   fi
   if ! command -v wget &> /dev/null
   then
       echo "wget could not be found, will install..."
-      sudo apt-get install wget -y
+      sudo pacman -S wget
   fi
   if ! command -v dig &> /dev/null
   then
       echo "dig could not be found, will install..."
-      sudo apt-get install dnsutils -y
+      sudo pacman -S dnsutils
   fi
 }
 
